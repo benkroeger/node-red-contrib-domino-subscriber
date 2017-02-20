@@ -1,6 +1,6 @@
 {
   "name": "node-red-contrib-domino-subscriber",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "IBM Connect 2017 Hackathon Domino Subscriber",
   "main": "lib/index.js",
   "scripts": {
@@ -8,7 +8,9 @@
   },
   "author": "Benjamin Kroeger <benjamin.kroeger@gmail.com>",
   "license": "MIT",
-  "keywords": [ "node-red" ],
+  "keywords": [
+    "node-red"
+  ],
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
