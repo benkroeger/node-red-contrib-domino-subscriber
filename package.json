@@ -23,8 +23,8 @@
   },
   "node-red": {
     "nodes": {
-      "ibm-domino-config": "ibm-domino-config/ibm-domino-config.js",
-      "ibm-domino-subscribe": "ibm-domino-subscribe/ibm-domino-subscribe.js"
+      "ibm-domino-config": "lib/ibm-domino-config/ibm-domino-config.js",
+      "ibm-domino-subscribe": "lib/ibm-domino-subscribe/ibm-domino-subscribe.js"
     }
   }
 }
