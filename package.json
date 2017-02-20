@@ -4,11 +4,10 @@
   "description": "IBM Connect 2017 Hackathon Domino Subscriber",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "node-red": "node-red --settings ./settings.js"
   },
   "author": "Benjamin Kroeger <benjamin.kroeger@gmail.com>",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.16.1",
     "express": "^4.14.1",
