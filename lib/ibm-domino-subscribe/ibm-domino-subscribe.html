@@ -1,0 +1,57 @@
+<script type="text/javascript">
+  RED.nodes.registerType('ibm-domino-subscribe', {
+    category: 'function',
+    color: '#a6bbcf',
+    defaults: {
+      server: {
+        value: '',
+        type: 'ibm-domino-config',
+      },
+      dominoContextRoot: {
+        value: '/openntf/minicrm.nsf/restservice.xsp/SubscribeService',
+        required: true,
+      },
+      contextRoot: {
+        value: '/domino-subscriber/callback',
+        required: true,
+      },
+      publicUrl: {
+        value: 'https://my-host.com',
+        required: true,
+      },
+      topic: {
+        value: 'domino-event',
+        required: true,
+      },
+    },
+    inputs: 0,
+    outputs: 1,
+    icon: 'file.png',
+    label: function label() {
+      return this.name || 'ibm-domino-subscribe';
+    },
+  });
+</script>
+
+<script type="text/x-red" data-template-name="ibm-domino-subscribe">
+    <div class="form-row">
+        <label for="node-input-server"><i class="icon-bookmark"></i> Server Config</label>
+        <input id="node-input-server">
+    </div>
+    <div class="form-row">
+        <label for="node-input-topic"><i class="icon-user"></i> Topic to subscribe to</label>
+        <input type="text" id="node-input-topic">
+    </div>
+    <div class="form-row">
+        <label for="node-input-dominoContextRoot"><i class="icon-user"></i> path to endpoint</label>
+        <input type="text" id="node-input-dominoContextRoot">
+    </div>
+    <div class="form-row">
+        <label for="node-input-contextRoot"><i class="icon-user"></i> our own endpoint</label>
+        <input type="text" id="node-input-contextRoot">
+    </div>
+    <div class="form-row">
+        <label for="node-input-publicUrl"><i class="icon-user"></i> our own public url</label>
+        <input type="text" id="node-input-publicUrl">
+    </div>
+</script>

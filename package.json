@@ -1,0 +1,28 @@
+{
+  "name": "node-red-contrib-domino-subscriber",
+  "version": "0.0.1",
+  "description": "IBM Connect 2017 Hackathon Domino Subscriber",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "node-red": "node-red --settings ./settings.js"
+  },
+  "author": "Benjamin Kroeger <benjamin.kroeger@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.15.0",
+    "eslint-config-oniyi": "^4.4.0",
+    "node-red": "^0.16.2"
+  },
+  "node-red": {
+    "nodes": {
+      "ibm-domino-config": "ibm-domino-config/ibm-domino-config.js",
+      "ibm-domino-subscribe": "ibm-domino-subscribe/ibm-domino-subscribe.js"
+    }
+  }
+}
